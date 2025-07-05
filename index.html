@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renna Abelle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Renna Abelle</h1>
+    <p>Where craft, vision, and written worlds come to life.</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#stories">Stories</a>
+      <a href="#contact">Contact</a>
+      <button id="modeToggle">🌙 Dark Mode</button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <article>
+      <h2>Welcome</h2>
+      <p>This platform serves as the central space for written works, creative ideas, and narrative explorations crafted by Renna Abelle. Whether you're here for fiction, concepts, or creative collaboration, you're in the right place.</p>
+    </article>
+
+    <article>
+      <h2>Latest Publications</h2>
+      <p>Explore powerful stories, character-driven fiction, and thematic projects written to challenge, inspire, and connect. More content is added regularly to expand the archive and showcase evolving work.</p>
+    </article>
+  </main>
+
+  <section id="stories">
+    <h2>Story Archive</h2>
+    <ul>
+      <li><a href="#">A Thousand Tones for You</a></li>
+      <li><a href="#">Blind Hearts</a></li>
+      <li><a href="#">Choosing to Be with the Crown</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you have questions, ideas, or would like to collaborate, feel free to reach out. Your messages are always welcome.</p>
+    <form action="https://formspree.io/f/xnnvyjaa" method="POST">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br />
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Renna Abelle. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("modeToggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      toggle.textContent = document.body.classList.contains("dark") ? "☀️ Light Mode" : "🌙 Dark Mode";
+    });
+  </script>
+</body>
+</html>
