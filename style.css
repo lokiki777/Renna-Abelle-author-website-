@@ -1,0 +1,72 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark {
+  background-color: #111;
+  color: #eee;
+}
+
+header, footer {
+  background-color: #f0f0f0;
+  padding: 1em;
+  text-align: center;
+}
+
+.dark header, .dark footer {
+  background-color: #1a1a1a;
+}
+
+nav {
+  margin-top: 0.5em;
+}
+
+nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #0077cc;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main, section {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+h1, h2 {
+  margin-bottom: 0.5em;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.7em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+form button {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.7em 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
